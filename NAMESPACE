@@ -1,1 +1,10 @@
-exportPattern("^[[:alpha:]]+")
+# exportPattern("^[[:alpha:]]+")
+
+export(forint)
+export(get_usdhuf)
+importFrom(checkmate, assert_number)
+importFrom(scales, dollar)
+importFrom(checkmate, assert_number)
+importFrom(jsonlite, fromJSON)
+importFrom(logger, log_error)
+importFrom(logger, log_info)
