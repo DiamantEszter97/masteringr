@@ -26,7 +26,7 @@ get_exchange_rates <- function(start_date, end_date, currfrom, currto, retried =
     exchange_rates <- content(response)$rates
     exchange <- data.table(
       date = as.Date(names(exchange_rates)),
-      usdhuf = as.numeric(unlist(exchange_rates)))
+      rate = as.numeric(unlist(exchange_rates)))
   }, error = function(e) {
     ## str(e)
     log_error(e$message)
