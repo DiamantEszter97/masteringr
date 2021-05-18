@@ -2,9 +2,11 @@
 
 export(forint)
 export(get_usdhuf)
+export(get_bitcoin_price)
 importFrom(checkmate, assert_number)
 importFrom(scales, dollar)
 importFrom(checkmate, assert_number)
 importFrom(jsonlite, fromJSON)
 importFrom(logger, log_error)
 importFrom(logger, log_info)
+importFrom(binancer, binance_coins_prices)
