@@ -1,6 +1,7 @@
 #' get HUf price of BTC
 #' @param retried number
 #' @return number
+#' @inheritParams forint
 #' @export
 #' @importFrom checkmate assert_number
 #' @importFrom jsonlite fromJSON

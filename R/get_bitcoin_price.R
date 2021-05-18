@@ -1,6 +1,8 @@
 #' get HUf price of given number of BTC
 #' @param retried number
 #' @return number
+#' @inheritParams get_usdhuf
+#' @inheritParams forint
 #' @export
 #' @importFrom logger log_info
 #'  @importFrom binancer binance_coins_prices
